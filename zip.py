@@ -11,7 +11,7 @@ zipper.close()
 with ZipFile('assignment.zip') as zp:
     print(zp.namelist())
     info = zp.getinfo('prime.py')
-    print(f'{info.file_size}-->{info.compress_size}')
+    
     
     zp.extract('prime.py')
    
